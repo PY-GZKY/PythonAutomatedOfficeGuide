@@ -14,4 +14,4 @@
 
 
 [GitHub](https://github.com/GZKY-PY/)
-[开始阅读](readme.md)
+[开始阅读](./readme.md)
