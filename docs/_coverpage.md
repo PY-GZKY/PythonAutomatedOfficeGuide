@@ -14,4 +14,4 @@
 
 
 [GitHub](https://github.com/py-gzky/)
-[开始阅读](./readme.md)
+[开始阅读]( README.md)
