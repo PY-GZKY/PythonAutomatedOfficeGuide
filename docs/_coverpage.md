@@ -1,4 +1,3 @@
-![logo](https://www.easyicon.net/api/resizeApi.php?id=1311353&size=128)
 
 ## 启发式 `Python` 自动化
 
