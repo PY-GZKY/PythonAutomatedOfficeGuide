@@ -43,11 +43,13 @@
   
 * [数据库](数据库/readme.md)
     * Mysql
+      * [安装Mysql](数据库/Mysql/安装Mysql.md)
       * [基础入门](数据库/Mysql/Mysql.md)
       * [Python交互](数据库/Mysql/Python-Mysql.md)
       * [底层结构](数据库/Mysql/底层结构.md)
       * [笑谈索引](数据库/Mysql/笑谈索引.md)
     * MongoDB
+      * [安装MongoDB](数据库/MongoDB/安装MongoDB.md)
       * [基础入门](数据库/MongoDB/MongoDB.md)
       * [Python交互](数据库/MongoDB/Python-MongoDB.md)
 
@@ -74,20 +76,20 @@
   * [快速初始化](桌面自动化/快速初始化.md)
   * [一些案例](桌面自动化/一些案例.md)
     
-    
 * [App自动化](App自动化/readme.md)
-  * [Appium的使用](App自动化/readme.md)
-  * [自动化应用程序](App自动化/readme.md)
+  * [环境搭建](App自动化/环境搭建/readme.md)
+  * [关于工具](App自动化/抓包配置/readme.md)
+  * [App爬虫](App自动化/App爬虫/我是如何开发App爬虫的.md)
 
 * [数据爬虫](爬虫/readme.md)
   * [工具简介](爬虫/工具简介.md)
   * [数据提取](爬虫/数据提取.md)
     
 * [GUI](GUI/readme.md)
+    * [使用Tkinter](GUI/GUI.md)
 
 * [调式和捕捉错误](调式和捕捉错误/readme.md)
     * [单元测试](调式和捕捉错误/dostest.md)
-
 
 * 杂谈
     * [可视化工具及安装](杂谈/可视化工具及安装.md)
