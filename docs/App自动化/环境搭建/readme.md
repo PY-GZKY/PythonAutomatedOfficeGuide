@@ -10,8 +10,11 @@ adb connect 127.0.0.1 # 默认连接本地 5555 端口
 ```
 
 
-## sdk && jdk && node
+## 安装 sdk && jdk && node
 
 
 
-## Appium && Aritest
+## 安装 appium && aritest
+
+## 安装 charles && mitmproxy
+

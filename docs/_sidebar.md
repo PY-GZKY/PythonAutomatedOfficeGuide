@@ -80,13 +80,14 @@
   * [环境搭建](App自动化/环境搭建/readme.md)
   * [关于工具](App自动化/抓包配置/readme.md)
   * [App爬虫](App自动化/App爬虫/我是如何开发App爬虫的.md)
+  * [通用的App爬虫流程](App自动化/App爬虫/通用的App爬虫流程.md)
 
 * [数据爬虫](爬虫/readme.md)
   * [工具简介](爬虫/工具简介.md)
   * [数据提取](爬虫/数据提取.md)
     
 * [GUI](GUI/readme.md)
-    * [使用Tkinter](GUI/GUI.md)
+    * [使用Tkinter](GUI/tk_数据库交互查询界面.md)
 
 * [调式和捕捉错误](调式和捕捉错误/readme.md)
     * [单元测试](调式和捕捉错误/dostest.md)

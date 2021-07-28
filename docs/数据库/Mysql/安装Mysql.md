@@ -125,3 +125,37 @@ flush privileges;
 > 注意这里的密码有别于前面设置的宿主机本地登陆的密码。
 
 > 至此，`MySQL` 部署完毕 ！！
+
+
+### 卸载Mysql
+
+
+
+#### 1.查看mysql安装
+
+```shell
+rpm -qa|grep -i mysql
+```
+
+#### 2.卸载前关闭mysql服务
+
+```shell
+rpm -ev --nodeps mysql-community-release-el7-5.noarch
+rpm -ev --nodeps mysql-community-common-5.6.38-2.el7.x86_64
+rpm -ev --nodeps mysql-community-client-5.6.38-2.el7.x86_64
+rpm -ev --nodeps mysql-community-libs-5.6.38-2.el7.x86_64
+rpm -ev --nodeps community-server-5.6.38-2.el7.x86_64
+```
+
+执行完命令之后再次执行 `rpm-qa|grep -i mysql` 会发现已经卸载完成。
+
+
+接着执行命令 `find / -name mysql`
+
+把查找出的目录删除
+```shell
+rm -rf 上面查出的所有文件夹
+```
+
+
+> `etc/my.cnf` 如果存在的话手动删除，这样`mysql`就卸载完成了。
