@@ -457,6 +457,22 @@ for result in result_list:
 {'_id': '2021-04-18', 'forceValue': 94.18697675337746}
 ```
 
+
+多字段聚合
+```python
+# -*- coding: utf-8 -*-
+from pymongo import MongoClient
+
+mongo_client = MongoClient("localhost", 27017, username=None, password=None)
+db = mongo_client["地下交通站"]
+
+match_dict = {"$match": {}}
+group_dict = {"$group":{"_id": {"createDate":"$createDate","name":"$name",},"forceValue":{"$sum":"$forceValue"}}}
+result_list = db["Quotations"].aggregate([match_dict,group_dict])
+for result in result_list:
+    print(result)
+```
+
 分组之后的文档总数
 ```python
 # -*- coding: utf-8 -*-
