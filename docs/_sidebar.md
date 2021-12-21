@@ -14,6 +14,9 @@
 * [办公自动化](办公自动化/readme.md)
   
   * [文件处理](办公自动化/文件处理/readme.md)
+    * [m3u8音视频拼接](办公自动化/文件处理/m3u8音视频拼接.md)
+    * [python视频转音频](办公自动化/文件处理/python视频转音频.md)
+    * [字符串相似度匹配](办公自动化/文件处理/字符串相似度匹配.md)
     
   * [excel](办公自动化/excel/readme.md)
     * [常用功能](办公自动化/excel/常用功能.md)
@@ -52,7 +55,10 @@
       * [安装MongoDB](数据库/MongoDB/安装MongoDB.md)
       * [基础入门](数据库/MongoDB/MongoDB.md)
       * [Python交互](数据库/MongoDB/Python-MongoDB.md)
-
+        
+    * Redis
+      * [安装Redis](数据库/Redis/安装Redis.md)
+      * [Redis](数据库/Redis/Redis.md)
 
 * [浏览器自动化](浏览器自动化/readme.md)
   * Selenium
@@ -63,9 +69,8 @@
   * Pyppeteer
     * [初始化Pyppeteer](浏览器自动化/pyppeteer/初始化pyppeteer.md)
     * [Pyppeteer常用功能](浏览器自动化/pyppeteer/pyppeteer常用功能.md)
-    * [一些案例](浏览器自动化/pyppeteer/一些案例.md)  
-  
-    
+    * [一些案例](浏览器自动化/pyppeteer/一些案例.md)
+      
   * 浏览器插件
     * [油猴插件](浏览器自动化/油猴插件/readme.md)
     
@@ -81,16 +86,22 @@
   * [关于工具](App自动化/抓包配置/readme.md)
   * [App爬虫](App自动化/App爬虫/我是如何开发App爬虫的.md)
   * [通用的App爬虫流程](App自动化/App爬虫/通用的App爬虫流程.md)
+  * [自动化框架](App自动化/自动化框架/Appium/xhs.md)
 
 * [数据爬虫](爬虫/readme.md)
   * [工具简介](爬虫/工具简介.md)
   * [数据提取](爬虫/数据提取.md)
+  * [m3u8音视频拼接](爬虫/m3u8音视频拼接.md)
+  * [代理服务器](爬虫/代理服务器.md)
+  * [攻破5秒盾](爬虫/攻破5秒盾.md)
     
 * [GUI](GUI/readme.md)
     * [使用Tkinter](GUI/tk_数据库交互查询界面.md)
 
 * [调式和捕捉错误](调式和捕捉错误/readme.md)
     * [单元测试](调式和捕捉错误/dostest.md)
-
+* 发布Pypi包
+    * [发布Pypi包](Pypi包发布/readme.md)
+    
 * 杂谈
     * [可视化工具及安装](杂谈/可视化工具及安装.md)
