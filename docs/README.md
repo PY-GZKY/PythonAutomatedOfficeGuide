@@ -1,6 +1,6 @@
 ### 《 启发式 `Python` 自动化办公 》
 
-> [python-automation-docs 文档](https://py-gzky.github.io/python-automation-docs)
+> [python-automation-docs 文档](https://python-automation.docs.tplan.cc/)
 
 > 本文档是作者从事 Python 以来的学习历程，
 重点是 Python 在自动化方面的一些主要的应用场景。
