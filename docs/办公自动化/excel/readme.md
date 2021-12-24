@@ -11,7 +11,7 @@ excel是自动化办公领域的主战场，在日常工作中 `excel` 表格操
 
 [![openpyxl](https://img.shields.io/badge/openpyxl-latest-red)](https://openpyxl.readthedocs.io/en/stable/)
 [![xlsxwriter](https://img.shields.io/badge/xlsxwriter-latest-blue)](https://xlsxwriter.readthedocs.io/)
-[![pandas](https://img.shields.io/badge/pandas-latest-yellow)](http://pandas.pydata.org/)
+[![pandas](https://img.shields.io/badge/pandas-1.3.0-yellow)](http://pandas.pydata.org/)
 
 
 
@@ -31,4 +31,4 @@ pip install openpyxl
 pip install pandas
 ```
 
-> 该文档以 `openpyxl` 为例读写 `excel` 文件
+> 该文档以 `openpyxl` 和 `pandas` 为例做读写文件操作
