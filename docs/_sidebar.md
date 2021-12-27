@@ -25,7 +25,7 @@
   * [excel](办公自动化/excel/readme.md)
     * [常用功能](办公自动化/excel/常用功能.md)
     * [一些案例](办公自动化/excel/一些案例.md)
-    * [pandas、openpyxl、数据库](办公自动化/excel/pandas、openpyxl、数据库.md)
+    * [pandas](办公自动化/excel/pandas.md)
   
   * [word](办公自动化/word/readme.md)
     * [常见功能](办公自动化/word/常用功能.md)
