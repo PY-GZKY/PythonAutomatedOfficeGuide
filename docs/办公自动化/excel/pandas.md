@@ -1,7 +1,8 @@
 ## Pandas 快速开始
 
-安装 pandas 以及相关依赖
-> 请确认已经安装了xlrd, xlwt, openpyxl 这三个包
+安装 `pandas` 以及相关依赖
+
+> 请确认已经安装了xlrd、 xlwt、 openpyxl 这三个包
 
 ```shell
 pip install pandas==1.3.0
@@ -128,7 +129,7 @@ df_ = pd.read_table('../data/my_table_special_sep.txt', sep=' abc ', engine='pyt
 ### 数据写入
 一般在数据写入中，最常用的操作是把index设置为False，特别当索引没有特殊意义的时候，这样的行为能把索引在保存的时候去除。
 
-[数据准备csv](data/数据准备csv.md ':include')
+[](data/数据准备csv.md ':include')
 
 将读取到的 csv 文件数据写入到 xlsx 文件(反之亦然)
 ```python
