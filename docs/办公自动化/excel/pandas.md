@@ -44,11 +44,11 @@ print(df_.head(10).to_markdown())
 ```python
 import pandas as pd
 
-df_ = pd.read_excel('../data/xhs_chengdu.xlsx',header=None) # 忽略表头
+df_ = pd.read_excel('../data/xhs_chengdu.xlsx', header=None)  # 忽略表头
 # df_ = pd.read_excel('../data/xhs_chengdu.xlsx',usecols=['city', 'title']) # 只读取 col1,col2 列
 # df_ = pd.read_excel('../data/xhs_chengdu.xlsx',parse_dates=['pub_time']) # 需要转化为时间的列(pub_time)
 # df_ = pd.read_excel('../data/xhs_chengdu.xlsx', nrows=2) # 只读取 2 行
-print(df_.head(10).to_markdown()) # 输出前 10 行并转化为 markdown 语法
+print(df_.head(10).to_markdown())  # 输出前 10 行并转化为 markdown 语法
 ```
 
 如果想要把表格快速转换为markdown和latex语言，可以使用to_markdown和to_latex函数，此处需要安装tabulate包。
@@ -81,10 +81,10 @@ df_csv = pd.read_table('../data/xhs_chengdu.txt')
 print(df_csv.head(5))
 ```
 
-在读取txt文件时，经常遇到分隔符非空格的情况，read_table 有一个分割参数sep，
-它使得用户可以自定义分割符号，进行txt数据的读取。例如，下面的读取的表以 abc 为分割：
+在读取txt文件时，经常遇到分隔符非空格的情况，read_table 有一个分割参数sep， 它使得用户可以自定义分割符号，进行txt数据的读取。例如，下面的读取的表以 abc 为分割：
 
 这里有一份 txt 文件格式的数据、它以 abc 为分割符：
+
 ```text
 col1 abc col2
 TS abc This is an apple.
@@ -93,9 +93,9 @@ WT abc Well done!
 PT abc May I help you?
 ```
 
-
 ```python
 import pandas as pd
+
 df_ = pd.read_table('../data/my_table_special_sep.txt')
 ```
 
@@ -110,6 +110,7 @@ df_ = pd.read_table('../data/my_table_special_sep.txt')
 
 ```python
 import pandas as pd
+
 df_ = pd.read_table('../data/my_table_special_sep.txt', sep=' abc ', engine='python')
 ```
 
@@ -122,48 +123,124 @@ df_ = pd.read_table('../data/my_table_special_sep.txt', sep=' abc ', engine='pyt
 |  2 | WT     | Well done!        |
 |  3 | PT     | May I help you?   |
 
-> 【WARNING】sep是正则参数
-在使用read_table的时候需要注意，参数sep中使用的是正则表达式，因此需要对|进行转义变成\|，否则无法读取到正确的结果。有关正则表达式的基本内容可以参考第八章或者其他相关资料。
-
+> 【WARNING】sep是正则参数 在使用read_table的时候需要注意，参数sep中使用的是正则表达式，因此需要对|进行转义变成\|，否则无法读取到正确的结果。有关正则表达式的基本内容可以参考第八章或者其他相关资料。
 
 ### 数据写入
+
 一般在数据写入中，最常用的操作是把index设置为False，特别当索引没有特殊意义的时候，这样的行为能把索引在保存的时候去除。
 
 [](data/数据准备csv.md ':include')
 
 将读取到的 csv 文件数据写入到 xlsx 文件(反之亦然)
+
 ```python
 import pandas as pd
-df_ = pd.read_excel('../data/xhs_chengdu.xlsx') # 忽略表头
+
+df_ = pd.read_excel('../data/xhs_chengdu.xlsx')  # 忽略表头
 df_.to_excel('../data/my_csv_saved.xlsx', index=False)
 ```
 
 ## 常用方法和基本数据结构
+
 - `pd.Series` 方法: 一维的行数据结构
 - `pd.DataFrame` 方法: 二维的表格结构(常用于读写转换)
 
 构建 Series
+
 ```python
 import pandas as pd
-s = pd.Series(data = [100, 'a', {'dic1':5}],
-              index = pd.Index(['id1', 20, 'third'], name='my_idx'),
-              dtype = 'object',
-              name = 'my_name')
+
+s = pd.Series(data=[100, 'a', {'dic1': 5}],
+              index=pd.Index(['id1', 20, 'third'], name='my_idx'),
+              dtype='object',
+              name='my_name')
 
 ```
+
 object代表了一种混合类型，正如上面的例子中存储了整数、字符串以及Python的字典数据结构。此外，目前pandas把纯字符串序列也默认认为是一种object类型的序列
 
 DataFrame在Series的基础上增加了列索引，一个数据框可以由二维的data与行列索引来构造
+
 ```python
 import pandas as pd
+
 data = [[1, 'a', 1.2], [2, 'b', 2.2], [3, 'c', 3.2]]
-df = pd.DataFrame(data = data,
-                  index = ['row_%d'%i for i in range(3)],
+df = pd.DataFrame(data=data,
+                  index=['row_%d' % i for i in range(3)],
                   columns=['col_0', 'col_1', 'col_2'])
 ```
 
 ## 缺失值的处理
 
+...
+
 ## pandas 进阶使用
 
+...
+
 ## 文件转储(与数据库交互)
+
+#### sql 转文件
+
+`pandas` 可以读取数据库中的表并转换成表格文件 (诸如 `csv`、`xlsx`、`json` 格式的文件)
+
+在 `pandas` 中有一个 `read_sql` 可以快速的对数据库进行查询操作。 需要注意的是目前 `pandas` 所支持的数据库引擎并不是很多（比如支持 `mysql` 而不支持 `mongodb`）
+
+这可能会是一个小小的痛点，不过没关系，我们可以通过其他的库进行读取操作后将数据进行写入操作，这个后面会提到。
+
+`read_sql` 方法的参数如下：
+
+```python
+read_sql(sql, con, index_col=None, coerce_float=True, params=None, parse_dates=None, columns=None, chunksize=None)
+```
+
+可以看到前两个是比较重要的参数
+
+- `sql` 为可执行的原生sql语句
+- `con` 是一个数据库连接`实例对象` (或者说是连接句柄)
+
+对于 `mysql`，这里习惯采用常用的第三方库 `pymysql` 来进行演示:
+
+```python
+import pandas as pd
+import pymysql
+
+conn = pymysql.connect(
+    host='localhost',
+    user='root',
+    passwd='123456',
+    db='test_',
+    port=3306,
+    charset='utf8mb4'
+)
+df = pd.read_sql('select * from test_', conn)
+df.head()
+```
+
+可以看出 `read_sql` 方法返回的就是一个 `dataframe` 对象，可以直接转换为 `csv、excel`等表格文件
+
+```python
+df.to_csv()
+```
+
+#### 文件转 sql
+
+相对应的 pandas 实现了 to_sql 方法来将文件中的数据转换为数据表
+
+```python
+to_sql(name, con, flavor=None, schema=None, if_exists='fail', index=True, index_label=None, chunksize=None, dtype=None)
+```
+
+使用的方法是:
+
+```python
+df.to_sql(name='test_', con='mysql+pymysql://root:123456@localhost:3306/test_?charset=utf8mb4', if_exists='replace',
+          index=False)
+```
+
+- name: 参数为存储的表名
+- con: 连接数据库的字符串句柄
+- if_exists: 用于判断是否有重复表名
+- fail: 如果有重复表名，就不保存，略过
+- replace: 用作替换
+- append: 就在该表中继续插入数据
