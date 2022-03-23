@@ -124,5 +124,8 @@ ZeroDivisionError: division by zero
 ```
 
 ## 程序调试
+#### 最简单的 `Print`
+`print` 可能是你初识 `Python` 之后用的第一个函数，它能最直观的把日志信息输出到控制台。
 
+如果我们需要更多格式和等级的日志输出，则会用到一些第三方的日志库，这里推荐  
 ## Pycharm断点调试
