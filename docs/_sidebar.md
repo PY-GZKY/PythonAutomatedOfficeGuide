@@ -1,6 +1,5 @@
 * [快速初始化](快速初始化/readme.md)
     * [环境搭建](快速初始化/installer.md)
-    * [开始一些配置](快速初始化/configure.md)
 
 * [办公自动化](办公自动化/readme.md)
 
