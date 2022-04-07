@@ -7,8 +7,8 @@
 
 如果本文档对你有所帮助，请给予支持！持续维护中 :laughing:
 
-![GitHub-Stars](https://img.shields.io/badge/Stars-13.4k-brightgreen)
-![Forks](https://img.shields.io/badge/Forks-1.7k-blue)
+<!-- ![GitHub-Stars](https://img.shields.io/badge/Stars-13.4k-brightgreen)
+![Forks](https://img.shields.io/badge/Forks-1.7k-blue) -->
 
 
 [GitHub](https://github.com/py-gzky/)
