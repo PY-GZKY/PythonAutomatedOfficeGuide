@@ -1,6 +1,6 @@
 ### 《 启发式 `Python` 自动化办公 》
 
-> [python-automation-docs 文档](https://python-automation.docs.tplan.cc/)
+https://python-automation.docs.tplan.cc
 
 > 本文档是作者从事 Python 以来的学习历程，
 重点是 Python 在自动化方面的一些主要的应用场景。
@@ -10,7 +10,7 @@
 
 ### 关于作者
 
-> `PI` 哥，目前坐标广州，从事 `Python 爬虫`/`开发` 多年。
+> 目前坐标广州，从事 `Python爬虫/开发` 多年。
 
 ## 为什么会写这个系列
 
